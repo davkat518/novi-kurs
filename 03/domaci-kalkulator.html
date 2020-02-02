@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kalkulator</title>
+</head>
+<body>
+  <h1>Kalkulator</h1>
+   Unesi prvi broj: <input type="number" name="broj1" value = '6'><br><br>
+   Unesi drugi broj: <input type="number" name="broj2"value = '4'><br><br>
+   Odaberite matematičku operaciju: <select name="operacija">
+                        <option selected> </option>
+                        <option value = "sabiranje">sabiranje</option>
+                        <option value = "oduzimanje">oduzimanje</option>
+                        <option value = "mnozenje">množenje</option>
+                        <option value = "deljenje">deljenje</option>
+
+                    </select><br><br>
+                     
+                   
+
+<script>
+function vrednost() {
+    var a=document.getElementsByTagName("input")[0].value;
+    var b=document.getElementsByTagName("input")[1].value;
+    var izbor=document.getElementsByTagName("select").value;    
+       if (izbor = 'oduzimanje'){
+           var c=parseFloat(a)-parseFloat(b);
+             document.getElementsByTagName("input")[3].value=c;
+           console.log(c);
+                        
+           
+       } else 
+          if (izbor == "sabiranje"){
+           var c=parseFloat(a)+parseFloat(b);
+                         document.getElementsByTagName("input")[3].value=c;
+              console.log(c);
+       } else 
+          if (izbor == "množenje"){
+           var c=parseFloat(a)*parseFloat(b);
+                        document.getElementsByTagName("input")[3].value=c;
+               console.log(c);
+       } else 
+          if (izbor = "deljenje"){
+           var c=parseFloat(a)/parseFloat(b);
+                        document.getElementsByTagName("input")[3].value=c;
+              console.log(c);
+      }
+  /* switch (izbor) {
+        case "oduzimanje":
+           var c=parseFloat(a)-parseFloat(b);
+             document.getElementsByTagName("input")[3].value=c;
+             break;           
+           
+        case "sabiranje":
+           var c=parseFloat(a)+parseFloat(b);
+                        document.getElementsByTagName("input")[3].value=c;
+            break; 
+        case "množenje":
+           var c=parseFloat(a)*parseFloat(b);
+                        document.getElementsByTagName("input")[3].value=c;
+            break; 
+        case "deljenje":
+           var c=parseFloat(a)/parseFloat(b);
+                       document.getElementsByTagName("input")[3].value=c;
+            break; 
+      }*/
+  }
+
+  
+    </script>
+     
+    <input type="button" name="dugme" value="Izračunaj" onclick="vrednost()"><br><br>
+    Rezultat je: <input type="number" name="rezultat"><br><br>
+    <input type="reset" id="obrisi" value="Obriši">
+</body>
+</html>

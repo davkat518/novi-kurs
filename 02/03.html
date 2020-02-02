@@ -1,0 +1,120 @@
+<html>
+    <head>
+    </head>
+    
+        <body>
+        
+        <script>
+          
+
+   /* var automobili =['BMW', 'Audi', 'Opel'];
+            alert('1.' + automobili);
+        
+            
+            //dodavanje novog elementa na kraj niza
+            
+            automobili.push('Lada');
+            alert('2.' + automobili);
+            
+            // dodavanje novog elementa na početak niza
+            
+            automobili.unshift('Kia');
+            alert('3.' + automobili);
+            
+            // brisanje poslednjeg elementa niza
+            
+            automobili.pop();
+            alert('4.' + automobili);
+            
+            // brisanje prvog elementa niza
+            
+            automobili.shift();
+            alert('5.' + automobili);
+            */
+            
+            /*
+                splice
+                    prvi parametar je gde dodajemo nove elemente
+                    drugi parametar je koliko ćemo elemenata brisati  
+                    svi naredni se dodaju u niz
+            
+            */ 
+            /*
+            automobili.splice(2, 0, 'FIAT', 'Toyota');
+            alert('6.' + automobili);
+            
+            automobili.splice(0, 2);
+            alert('7.' + automobili);
+            
+            automobili.splice(0, automobili.length);        // briše sve elemente niza
+            alert('8.' + automobili);
+           */
+            
+            alert('Povezivanje nizova');
+            
+            var niz1 = [1, 2, 3];
+            var niz2 = [7, 8, 9];
+            
+            alert(niz1);
+            alert(niz2);
+            
+            var povezaniNiz = niz1.concat(niz2);
+            alert('Novi niz je ' + povezaniNiz + ' i ima ' + povezaniNiz.length + ' elemenata');
+            
+            // razbijanje stringa u niz
+            
+            var pitanje = 'Kako nam se dopada JavaScript?';
+            var noviNiz = pitanje.split(' ');
+            alert(pitanje);
+            alert(noviNiz);
+            
+            for (var i = 0; i < noviNiz.length; i++) {
+                
+                alert(noviNiz[i]);
+            }
+            
+            var j = 0;
+            while (j < noviNiz.length) {
+                   
+                   alert(noviNiz[j]);
+                    j++;
+                   
+                   }
+            
+        </script>
+        
+        
+        </body>
+    
+    
+    
+
+
+</html>
+
+
+         
+       
+       
+      /*  var rezultat = '';
+                
+                    for(var j =1; j<6; j++) {
+                        
+                        rezultat = rezultat + j;
+                    }
+                    
+                    console.log(rezultat);
+                    rezultat = '';
+              
+    
+    var rezultat = '';
+                for (var i = 1; i<6; ++i) {
+                    
+                    for (var j = 1; j >= i; j--) {
+                        rezultat = rezultat + j;      //isto što i rezultat = rezultat + j;
+                                                
+                    }
+                    console.log(rezultat);
+                    rezultat ='';
+                }
+                */

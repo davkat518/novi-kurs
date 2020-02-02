@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sat</title>
+</head>
+<body>
+   <h1>Sat</h1>
+    <script>
+           var trVreme= setInterval(vreme,1000);
+function vreme(){
+    
+    sada =new Date;
+
+            document.getElementById("vreme").innerHTML=" Trenutno vreme u Novom Sadu je " + (sada.getHours() < 10? '0' : '')+sada.getHours() + ":" + (sada.getMinutes() < 10? '0' : '')+sada.getMinutes() + ":" + (sada.getSeconds() < 10? '0' : '')+sada.getSeconds()  + "   " 
+               // + (sada.getDate() < 10? '0' : '')+sada.getDate() + "." + (sada.getMonth() < 10? '0' : '')+(sada.getMonth()+1) + "." + sada.getFullYear() + "."
+    ;
+
+}
+        
+    var trVreme= setInterval(vremeNY,1000);
+function vremeNY(){
+    
+  sada =new Date;
+if (sada.getHours() > 5) {
+            document.getElementById("vremeNY").innerHTML=" Trenutno vreme u Njujorku je -6 sati: " + (sada.getHours() < 10? '0' : '')+(sada.getHours() - 6) + ":" + (sada.getMinutes() < 10? '0' : '')+sada.getMinutes() + ":" + (sada.getSeconds() < 10? '0' : '')+sada.getSeconds()+ "   " 
+                //+ (sada.getDate() < 10? '0' : '')+sada.getDate() + "." + (sada.getMonth() < 10? '0' : '')+(sada.getMonth()+1) + "." + sada.getFullYear() + "."
+    ;
+} else 
+    document.getElementById("vremeNY").innerHTML=" Trenutno vreme u Njujorku je -6 sati: " + (sada.getHours() < 10? '0' : '')+(sada.getHours() +18) + ":" + (sada.getMinutes() < 10? '0' : '')+sada.getMinutes() + ":" + (sada.getSeconds() < 10? '0' : '')+sada.getSeconds()+ "   " 
+        //+ (sada.getDate() < 10? '0' : '')+(sada.getDate()-1) + "." + (sada.getMonth() < 10? '0' : '')+(sada.getMonth()+1) + "." + sada.getFullYear() + "."
+    ;
+}
+     
+    var trVreme= setInterval(vremeS,1000);
+function vremeS(){
+    
+sada =new Date;
+if (sada.getHours() >13) {
+         document.getElementById("vremeS").innerHTML=" Trenutno vreme u Sidneju je +10 sati: " + (sada.getHours() < 10? '0' : '')+(sada.getHours() - 14) + ":" + (sada.getMinutes() < 10? '0' : '')+sada.getMinutes() + ":" + (sada.getSeconds() < 10? '0' : '')+sada.getSeconds()+ "   " 
+             //+ (sada.getDate() < 10? '0' : '')+(sada.getDate()+1) + "." + (sada.getMonth() < 10? '0' : '')+(sada.getMonth()+1) + "." + sada.getFullYear() + "."
+    ;
+    
+            
+} else 
+   document.getElementById("vremeS").innerHTML=" Trenutno vreme u Sidneju je +10 sati: " + (sada.getHours() < 10? '0' : '')+(sada.getHours() + 10) + ":" + (sada.getMinutes() < 10? '0' : '')+sada.getMinutes() + ":" + (sada.getSeconds() < 10? '0' : '')+sada.getSeconds()+ "   " 
+       //+ (sada.getDate() < 10? '0' : '')+sada.getDate() + "." + (sada.getMonth() < 10? '0' : '')+(sada.getMonth()+1) + "." + sada.getFullYear() + "."
+    ;
+}
+        
+
+    </script>
+    <h2><span id="vreme"></span></h2>
+    <h2><span id="vremeNY"></span></h2>
+    <h2><span id="vremeS"></span></h2>
+    
+    
+    
+</body>
+</html>
