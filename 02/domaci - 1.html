@@ -9,10 +9,15 @@
    <script>
        var rezultat = '';
        var rezultat1 = '';
+       var razmak ='';
        
                 for (var i = 1; i<6; ++i) {
                     
+                    for (k=4; k>=0; k--) {
+                        razmak =' ';
+                    }
                     for (var j = 1; j <= i; j++) {
+                        
                               
                       rezultat  += j;
                              
@@ -23,7 +28,7 @@
                       rezultat1  += j;
                     }
         
-                    console.log(rezultat1 + rezultat);
+                    console.log(razmak + rezultat1 + rezultat);
                     rezultat ='';
                     rezultat1 = '';
                 }
